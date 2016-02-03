@@ -1,0 +1,22 @@
+{
+  "name": "spiral",
+  "version": "0.0.0",
+  "description": "Experimental audio visualization",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Nicolas Daniel",
+    "email": "nicolas.daniel.29@gmail.com",
+    "url": "https://github.com/nicolas-daniel"
+  },
+  "dependencies": {
+    "browserify": "^12.0.1"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0"
+  },
+  "scripts": {
+    "start": "budo index.js:bundle.js --open -v -- -t babelify",
+    "live": "budo index.js:bundle.js --verbose --live -- -t babelify"
+  }
+}
